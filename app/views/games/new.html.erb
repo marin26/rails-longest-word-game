@@ -1,0 +1,21 @@
+<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+ <h1>My FUCKING Game</h1>
+<div class="ya">
+  <ul><% @letters.each do |letter| %>
+    <li class="list">
+      <%= letter %>
+      <% end %>
+    </li>
+  </ul>
+</div>
+
+<h3>DAAAAAAMMMM Danielll</h3>
+<div class="yo">
+  <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input class="btn" type="text" name="word" placeholder="bitch">
+    <input class="b" type="submit"">
+  </form>
+</div>
